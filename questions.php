@@ -247,7 +247,7 @@ if($query->rowCount() > 0)
             var dashHtml='';
             var i;
             for (i = 0; i < <?php echo $anslength;?>; i++  ){
-                console.log("working");
+         
                 dashHtml +="<input type='text' style='width: 30px; text-align: center; font-family: sans-seriff' class='letter' oninput='this.value = this.value.toUpperCase()' maxlength='1'></input>"
             }
             container.innerHTML = dashHtml;
