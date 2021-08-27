@@ -2,7 +2,6 @@
 session_start();
 include('config.php');
 $jdata=json_decode($_POST['temdata']);
-echo "<script>alert('$jdata'); </script>";
 
 $email = $_SESSION['alogin'];
 $plevel = $_SESSION['plevel'];
@@ -14,7 +13,6 @@ $query-> bindParam(':userlevel', $plevel, PDO::PARAM_STR);
 $query-> execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
 $corans = $results[0]->answer;
-echo "<script>alert('$corans'); </script>";
 if( $corans === $jdata)
 {
     $newplevel = intval($plevel) + 1;
