@@ -12,7 +12,7 @@ $query-> bindParam(':username', $username, PDO::PARAM_STR);
 $query-> execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
 $userlevel = $results[0]->level;
-if($userlevel>=16){  // ADD MAXIMUM LEVEL
+if($userlevel>=10){  // ADD MAXIMUM LEVEL
     echo "<script type='text/javascript'> document.location = 'thankyou.php'; </script>";
 }
 $_SESSION['plevel'] = $userlevel;
