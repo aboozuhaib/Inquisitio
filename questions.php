@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!$_SESSION['alogin']){
-  echo "<script type='text/javascript'> document.location = ''; </script>";
+  echo "<script type='text/javascript'> document.location = '/'; </script>";
 }
 else {
 include('config.php');
@@ -119,7 +119,7 @@ if($query->rowCount() > 0)
       >
         FIND OUT!
       </h1>
-      <p class="lead">Anything related to Question.</p>
+      <p class="lead">.</p>
       <hr class="my-4" style="background-color: white" />
       <img
         src="<?php echo $ques ?>"
