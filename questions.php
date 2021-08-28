@@ -93,7 +93,7 @@ if($query->rowCount() > 0)
               <a class="nav-link" href="#">Contact us</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="logout">Logout</a>
+              <a class="nav-link" href="logout.php">Logout</a>
             </li>
           </ul>
         </div>
