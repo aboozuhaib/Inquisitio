@@ -15,6 +15,7 @@ $results=$query->fetchAll(PDO::FETCH_OBJ);
 $corans = $results[0]->answer;
 if( $corans === $jdata)
 {
+ $newplevel = intval($plevel) + 1;
  $date = date_default_timezone_set('Asia/Kolkata');
 $today = date("F j, Y, g:i sa T");
  if ($newplevel<= 16){
