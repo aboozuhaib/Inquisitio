@@ -30,7 +30,7 @@ if($query->rowCount() > 0)
 
 } else{
   
-  echo "<script>alert('Invalid Details'); document.location = 'index'; </script>";
+  echo "<script>alert('Invalid Details'); document.location = ''; </script>";
 
 }};
 
