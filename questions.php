@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!$_SESSION['alogin']){
-  echo "<script type='text/javascript'> document.location = 'index'; </script>";
+  echo "<script type='text/javascript'> document.location = ''; </script>";
 }
 else {
 include('config.php');
