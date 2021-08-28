@@ -161,7 +161,7 @@ session_start();
         
         </div>
         <div class="mx-auto">
-          <center><h2>You have successfully completed the online hunting round.</h2></center><br> <br>
+          <center><h2 style="color:white;">You have successfully completed the online hunting round.</h2></center><br> <br>
         <center><a class="btn btn-primary btn-lg" href="logout.php" id="proceedbtn" role="button" style=" margin-right: 20px;background:rgba(0, 0, 0, 0.85); border: 1px solid #66fcf1; border-radius: 0;" >LOGOUT</a></center>
         </div>
         </div>
