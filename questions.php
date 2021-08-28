@@ -162,7 +162,7 @@ if($query->rowCount() > 0)
                   title="ISTE"
                 />
                 <h3 style="color: #fff; float: right; padding-left: 5px">
-                  ISTE TKMCE Chapter
+                  ISTE Kerala Chapter
                 </h3>
               </div>
               <hr />
