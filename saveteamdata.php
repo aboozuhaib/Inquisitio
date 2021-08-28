@@ -15,16 +15,18 @@ $results=$query->fetchAll(PDO::FETCH_OBJ);
 $corans = $results[0]->answer;
 if( $corans === $jdata)
 {
-    $newplevel = intval($plevel) + 1;
+ $date = date_default_timezone_set('Asia/Kolkata');
+$today = date("F j, Y, g:i sa T");
  if ($newplevel<= 16){
-    $sql ="UPDATE `teamlevel` SET `level` = :newlevel WHERE `username`= :email;";
+    $sql ="UPDATE `teamlevel` SET `level` = :newlevel, `finishtime` = :completedtime WHERE `username`= :email;";
     if ( ! $sql ) {
         print_r( $dbh->errorInfo() );
     }
-    
+
     $query= $dbh -> prepare($sql);
     $query-> bindParam(':email', $email, PDO::PARAM_STR);
     $query-> bindParam(':newlevel', $newplevel, PDO::PARAM_STR);
+     $query-> bindParam(':completedtime', $today, PDO::PARAM_STR);
     $check = $query-> execute();
     $lastInsertId = $dbh->lastInsertId();
     if($check)
